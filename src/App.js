@@ -15,12 +15,11 @@ import Footer from "./components/Footer";
               - Image
               - Name
               - Rating
-              - Cusines
-              -
+              - Cusines -
      Footer
       - links
       - Copyright
-    
+  
     */
 
 //Config Driven UI
