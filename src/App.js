@@ -16,6 +16,7 @@ import Footer from "./components/Footer";
               - Name
               - Rating
               - Cusines
+              -
      Footer
       - links
       - Copyright
