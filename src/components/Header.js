@@ -1,10 +1,8 @@
+import { Link } from "react-router-dom";
+import Logo from "../assets/img/foodVilla.png";
 const Title = () => (
   <a href='/'>
-    <img
-      className='logo'
-      alt='logo'
-      src='https://yt3.ggpht.com/ytc/AMLnZu_EC-ECXAxRAixWGEfMsE1rdSoetBHyxmLNdtCB=s900-c-k-c0x00ffffff-no-rj'
-    />
+    <img className='logo' alt='logo' src={Logo} />
   </a>
 );
 
@@ -14,9 +12,9 @@ const Header = () => {
       <Title />
       <div className='nav-items'>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+          <Link to='/'>Home</Link>
+          <Link to='/about'>About</Link>
+          <Link to='/contact'>Contact</Link>
           <li>Cart</li>
         </ul>
       </div>
