@@ -1,61 +1,57 @@
-/// FOR LDAP
+/* 1 createdAt:3/23/2023, 5:57:55 PM*/
 {
-        "_id" : ObjectId("641c4cd3f2d75053dd627dc0"),
-        "CustomerID" : ObjectId("6231ce19932e27000985ba60"),
-        "ProviderName" : "Ldap",
-        "OrgID" : "admin",
-        "AuthProvider" : "ldap",
-        "LdapConfig" : {
-            "host" : "127.0.0.1",
-            "port" : "10390",
-            "bind_dn" : "uid=admin,ou=system",
-            "bind_credential" : "secret",
-            "LdapBase" : "ou=users,dc=eprintitsaas,dc=org",
-            "primarykey" : "cn"
-        },
-        "SamlConfig" : null,
-        "OpenIdConfig" : null,
-        "IsDeleted" : false,
-        "CreatedAt" : ISODate("2023-02-19T20:54:41.000+05:30"),
-        "UpdatedAt" : ISODate("2023-02-19T20:54:41.000+05:30"),
-        "IsActive" : true,
-        "UpdatedBy" : ObjectId("62f0faa753a07100093832b2"),
-        "DefaultGroupID" : ObjectId("64075c35e202f639a3809aa0"),
-        "Mappings" : {
-            "Username" : "cn",
-            "PrimaryEmail" : "email",
-            "FirstName" : "fn",
-            "LastName" : "sn",
-            "CardNumber" : null,
-            "Mobile" : null,
-            "Role" : "role"
-        },
-        "GroupId" : [
-            {
-                "name" : "paul.admin",
-                "id" : ObjectId("64075c35e202f639a3809aa0")
-            },
-            {
-                "name" : "new_group_permission",
-                "id" : ObjectId("637f7bb625986cccf7701d72")
-            },
-            {
-                "name" : "Monday-chimi",
-                "id" : ObjectId("637ba93dd27dfe85125bbd91")
-            },
-            {
-                "name" : "New_Print",
-                "id" : ObjectId("63bd6e82da12b79d195ccda5")
-            }
-        ]
-    }
+	"_id" : ObjectId("641c4cd3f2d75053dd627dc0"),
+	"CustomerID" : ObjectId("6231ce19932e27000985ba60"),
+	"ProviderName" : "Ldap",
+	"OrgID" : "admin",
+	"AuthProvider" : "ldap",
+	"LdapConfig" : {
+		"host" : "127.0.0.1",
+		"port" : "10390",
+		"bind_dn" : "uid=admin,ou=system",
+		"bind_credential" : "secret",
+		"LdapBase" : "ou=users,dc=eprintitsaas,dc=org",
+		"primarykey" : "cn"
+	},
+	"SamlConfig" : null,
+	"OpenIdConfig" : null,
+	"IsDeleted" : false,
+	"CreatedAt" : ISODate("2023-02-19T20:24:41.000+05:00"),
+	"UpdatedAt" : ISODate("2023-02-19T20:24:41.000+05:00"),
+	"IsActive" : true,
+	"UpdatedBy" : ObjectId("62f0faa753a07100093832b2"),
+	"DefaultGroupID" : ObjectId("64075c35e202f639a3809aa0"),
+	"Mappings" : {
+		"Username" : "cn",
+		"PrimaryEmail" : "email",
+		"FirstName" : "fn",
+		"LastName" : "sn",
+		"CardNumber" : null,
+		"Mobile" : null,
+		"Role" : "role"
+	},
+	"GroupId" : [
+		{
+			"name" : "paul.admin",
+			"id" : ObjectId("64075c35e202f639a3809aa0")
+		},
+		{
+			"name" : "new_group_permission",
+			"id" : ObjectId("637f7bb625986cccf7701d72")
+		},
+		{
+			"name" : "Monday-chimi",
+			"id" : ObjectId("637ba93dd27dfe85125bbd91")
+		},
+		{
+			"name" : "New_Print",
+			"id" : ObjectId("63bd6e82da12b79d195ccda5")
+		}
+	]
+},
 
-
-
-    ////// . OIDC
-
-
-    {
+/* 2 createdAt:3/9/2023, 10:41:44 PM*/
+{
 	"_id" : ObjectId("640a1a583975cfdab5102c17"),
 	"CustomerID" : ObjectId("6231ce19932e27000985ba60"),
 	"ProviderName" : "Oidc",
@@ -104,11 +100,9 @@
 		"Mobile" : "mobile_number",
 		"Role" : "role"
 	}
-}
+},
 
-
-/// SamlConfig
-
+/* 3 createdAt:3/9/2023, 10:29:31 PM*/
 {
 	"_id" : ObjectId("640a177b3975cfdab5102c16"),
 	"CustomerID" : ObjectId("6231ce19932e27000985ba60"),
