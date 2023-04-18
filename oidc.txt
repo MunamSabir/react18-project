@@ -1,0 +1,153 @@
+/// FOR LDAP
+{
+        "_id" : ObjectId("641c4cd3f2d75053dd627dc0"),
+        "CustomerID" : ObjectId("6231ce19932e27000985ba60"),
+        "ProviderName" : "Ldap",
+        "OrgID" : "admin",
+        "AuthProvider" : "ldap",
+        "LdapConfig" : {
+            "host" : "127.0.0.1",
+            "port" : "10390",
+            "bind_dn" : "uid=admin,ou=system",
+            "bind_credential" : "secret",
+            "LdapBase" : "ou=users,dc=eprintitsaas,dc=org",
+            "primarykey" : "cn"
+        },
+        "SamlConfig" : null,
+        "OpenIdConfig" : null,
+        "IsDeleted" : false,
+        "CreatedAt" : ISODate("2023-02-19T20:54:41.000+05:30"),
+        "UpdatedAt" : ISODate("2023-02-19T20:54:41.000+05:30"),
+        "IsActive" : true,
+        "UpdatedBy" : ObjectId("62f0faa753a07100093832b2"),
+        "DefaultGroupID" : ObjectId("64075c35e202f639a3809aa0"),
+        "Mappings" : {
+            "Username" : "cn",
+            "PrimaryEmail" : "email",
+            "FirstName" : "fn",
+            "LastName" : "sn",
+            "CardNumber" : null,
+            "Mobile" : null,
+            "Role" : "role"
+        },
+        "GroupId" : [
+            {
+                "name" : "paul.admin",
+                "id" : ObjectId("64075c35e202f639a3809aa0")
+            },
+            {
+                "name" : "new_group_permission",
+                "id" : ObjectId("637f7bb625986cccf7701d72")
+            },
+            {
+                "name" : "Monday-chimi",
+                "id" : ObjectId("637ba93dd27dfe85125bbd91")
+            },
+            {
+                "name" : "New_Print",
+                "id" : ObjectId("63bd6e82da12b79d195ccda5")
+            }
+        ]
+    }
+
+
+
+    ////// . OIDC
+
+
+    {
+	"_id" : ObjectId("640a1a583975cfdab5102c17"),
+	"CustomerID" : ObjectId("6231ce19932e27000985ba60"),
+	"ProviderName" : "Oidc",
+	"OrgID" : "admin",
+	"AuthProvider" : "oidc",
+	"SamlConfig" : null,
+	"OpenIdConfig" : {
+		"ClientID" : "JfMhAcDyPCq3IpjDeUHl4aDNBSRUEJla",
+		"ResponseType" : [ "code" ],
+		"Scope" : "openid profile email phone address",
+		"RedirectUri" : "/auth/oidc/callback?authType=oidc&orgId=admin",
+		"GrantType" : "authorization_code",
+		"ClientSecret" : "sDr7g0YWSxhXT0HKAgwtUP5EjG_37esZUlGoTp_ul2VJFOVLfeh53SezDdeYztPs",
+		"Distribution" : "amazon-oai",
+		"Authn" : "OKTA",
+		"PrivateKey" : "",
+		"PublicKey" : "",
+		"DiscoveryDocument" : "https://dev-amd0yennxe237e4b.us.auth0.com/.well-known/openid-configuration",
+		"SessionDuration" : "30",
+		"BaseUrl" : "https://dev-amd0yennxe237e4b.us.auth0.com/",
+		"CallbackPath" : "/oidc/callback",
+		"Authz" : "OKTA"
+	},
+	"IsActive" : true,
+	"IsDeleted" : false,
+	"CreatedAt" : ISODate("2023-02-19T20:24:41.000+05:00"),
+	"UpdatedAt" : ISODate("2023-02-19T20:24:41.000+05:00"),
+	"UpdatedBy" : ObjectId("62f0faa753a07100093832b2"),
+	"DefaultGroupID" : ObjectId("63bd6e82da12b79d195ccda5"),
+	"GroupId" : [
+		{
+			"name" : "admin",
+			"id" : ObjectId("63aeaf38ac60648bad87e70f")
+		},
+		{
+			"name" : "new_group_permission",
+			"id" : ObjectId("637f7bb625986cccf7701d72")
+		}
+	],
+	"Mappings" : {
+		"Username" : "user_name",
+		"PrimaryEmail" : "email",
+		"FirstName" : "given_name",
+		"LastName" : "family_name",
+		"CardNumber" : "card_number",
+		"Mobile" : "mobile_number",
+		"Role" : "role"
+	}
+}
+
+
+/// SamlConfig
+
+{
+	"_id" : ObjectId("640a177b3975cfdab5102c16"),
+	"CustomerID" : ObjectId("6231ce19932e27000985ba60"),
+	"ProviderName" : "Saml",
+	"OrgID" : "ocls",
+	"AuthProvider" : "saml",
+	"SamlConfig" : {
+		"LoginUrl" : "https://dev-12691359.okta.com/app/dev-12691359_saml2_1/exk89fzq1a6D7w3re5d7/sso/saml",
+		"Certificates" : [ "MIIDqDCCApCgAwIBAgIGAYYwHJFsMA0GCSqGSIb3DQEBCwUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxFTATBgNVBAMMDGRldi0xMjY5MTM1OTEcMBoGCSqGSIb3DQEJARYNaW5mb0Bva3RhLmNvbTAeFw0yMzAyMDgwODE5MjRaFw0zMzAyMDgwODIwMjNaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxFTATBgNVBAMMDGRldi0xMjY5MTM1OTEcMBoGCSqGSIb3DQEJARYNaW5mb0Bva3RhLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAPMV0bSUteRXtq5JC/nfOtGe7oVN5PtC4OMAkr5mWqS2QmFbn+DPdgo/Ya2QZe+Cdx+TuW0JpJzKgpRTjKQ4j4okiLfMLJXpjwZsYSJc0y/nqMBURroNCSYIUfOQbX6vyuJS9b6G5GsiVXNpH/xuOF0cWZ4s2S8K0Sg+MqhMnoBMK8ObxS3qd2t6H6goyZwrMAgU4MDAKS7TiFxCuXe3wuhidW2p0XwR8B15kDeAvsnFKTjXen9bcEla3wZDitr2jl0jEPBOnogZ411TSpgvgtS8sRrvag0bpdPQHOL87P77fDkKnvATMVR3VnxA7sR4ybvdL0BtaBltuP+uUHvQgJkCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAOfJ9gp4PeEoaBIeb6RHZPW2bLaWiH7uoEEu3mDFlD1IGwX43P8l6mDovUk1+01vlNM+oLe0UOeeJmtun0epLv7TnuelT3RqHPI1EvxvW0uAKsIbX01herIkS8ZRjBys7gcrXJQbFOR4QL91yaM8XcXoWkPJYnmHXEkzz2gIZeSRw61+cTS2Dh5CRU7zV+it/5eBFVfL4U4qirXR8afXVq/2hvmFsl8Ad3FHz+wJX7SHEDO988xXIzseNWAJ6xyomsHwWK5KaG84n4vsH31EgClCY+Qac8EEYhb/x7Du48UPRmWxEmyFujioMZ/aifeLGGltdOwIq5KK5NiCxYJO4gA==" ],
+		"NameIdFormat" : "urn:oasis:names:tc:SAML:2.0:nameid-format:email",
+		"ForceAuthn" : false,
+		"SignGetRequest" : true,
+		"AllowUnencryptedAssertion" : false
+	},
+	"OpenIdConfig" : null,
+	"CustomerData" : null,
+	"IsDeleted" : false,
+	"CreatedAt" : ISODate("2023-02-19T20:24:41.000+05:00"),
+	"UpdatedAt" : ISODate("2023-02-19T20:24:41.000+05:00"),
+	"IsActive" : true,
+	"UpdatedBy" : ObjectId("62f0faa753a07100093832b2"),
+	"Mappings" : {
+		"Username" : "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/username",
+		"PrimaryEmail" : "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/email",
+		"FirstName" : "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/first",
+		"LastName" : "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/last",
+		"CardNumber" : null,
+		"Mobile" : null,
+		"Role" : "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/role"
+	},
+	"DefaultGroupID" : ObjectId("63a96b60839204f6cdc03a77"),
+	"GroupId" : [
+		{
+			"name" : "admin",
+			"id" : ObjectId("63aeaf38ac60648bad87e70f")
+		},
+		{
+			"name" : "new_group_permission",
+			"id" : ObjectId("637f7bb625986cccf7701d72")
+		}
+	]
+}

@@ -1,0 +1,24 @@
+React Hooks
+
+Next.js
+
+React Redux 
+
+React Redux toolkit
+
+React Query. (Cache)
+
+Formik
+
+React Virtualised (scrolling long page/ infinite scroll)
+
+React spring (animation api)
+
+React testing library (behaviour testing)
+
+Typescript
+
+React Native 
+
+
+
