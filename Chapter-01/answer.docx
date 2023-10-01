@@ -1,0 +1,107 @@
+1:
+What is Emmet?
+Emmet is toolkit for developers. It help developer to write code in short form
+then is expend to the full code.
+It's an add on for text editor.
+It workflow is based on HTML and CSS.
+
+2:
+Difference between a Library and Framework?
+
+In software development refer to reusable code that developer in can incorporate into their projects.
+The control over the application flow differ between two.
+
+Libraries are collections of functions and procedures that you can call to perform specific tasks, 
+frameworks provide a broader structure for your application, which you then build upon by adding 
+your own code into the predetermined slots. When using a library, you are in control; with a framework, 
+you surrender some level of control to adhere to its design and structure.
+
+3:
+What is CDN? Why do we use it?
+
+Content Delivery Network, is a system of distributed servers that deliver content, like web pages, 
+images, stylesheets, and JavaScript files, to users based on their geographic location. 
+The primary goal of a CDN is to improve the speed and reliability of web content delivery to users 
+worldwide.
+
+4: 
+Why is React known as React?
+
+The name "React" reflects the library's capability to "react" to changes in the application's state. 
+With React, when the state of an application changes (due to user actions, network responses, or for 
+any other reason), the UI updates automatically and efficiently to reflect those changes. React allows 
+developers to build UI components that can "react" to dynamic data, meaning they can update and render 
+efficiently in response to data changes.
+
+5:
+What is crossorigin in script tag?
+
+The crossorigin attribute in the <script> tag is used to handle requests for CORS (Cross-Origin Resource Sharing)
+in HTML documents. This attribute is crucial when you are loading resources, like scripts, from domains 
+different than the domain serving the HTML page.
+
+Understanding and using the crossorigin attribute is crucial when dealing with scripts hosted on different 
+domains, as it allows developers to make secure and controlled cross-origin requests while maintaining access 
+to detailed error information when necessary.
+
+There are 3 values of crossorigin
+Anonymous:
+
+crossorigin="anonymous"
+With this value, the browser sends the cross-origin request without credentials 
+(like cookies or HTTP authentication). However, the server must include the appropriate CORS headers 
+(like Access-Control-Allow-Origin) in the response, and it can use a wildcard * or the requesting domain.
+If the server does not include the necessary CORS headers in the response, the request fails.
+
+Use-Credentials:
+crossorigin="use-credentials"
+In this case, the browser sends the cross-origin request with credentials. Again, the server must include 
+the proper CORS headers in the response, but it can't use a wildcard * for Access-Control-Allow-Origin. 
+Instead, it must specify the exact domain of the requesting site.
+
+Not Present / Omitted:
+If the crossorigin attribute is not present, the request is made without CORS, meaning it's a same-origin 
+request. For cross-origin requests without the crossorigin attribute, the browser won't execute the script 
+and will throw an error if the response doesn't have the correct CORS headers.
+
+6:
+What is difference between React and ReactDOM
+
+React and ReactDOM are two libraries that work together to build React applications, 
+but they have different roles and responsibilities.
+
+React:
+Core Library: React is the core library that includes the fundamental functionalities and concepts of React, 
+like the virtual DOM, components, props, and state.
+
+ReactDOM:
+DOM Manipulation: ReactDOM is responsible for rendering React components into the DOM. It acts as a bridge between 
+the React core library and the DOM.
+
+7:
+What is difference between react.development.js and react.production.js files via CDN?
+
+These files are built to serve different purposes and environments: development and production, respectively.
+
+react.development.js:
+Development Environment:
+This file is optimized for a development environment.
+It's not minified, meaning the code is readable and not compressed, facilitating debugging and development.
+
+react.production.min.js:
+Production Environment:
+This file is optimized for production environments.
+It's minified, meaning the code is compressed to reduce its size, resulting in faster load times. 
+The minification process removes whitespace, comments, and renames variables to shorter names, making
+the file size as small as possible.
+
+Example:
+<!-- Development Version -->
+<script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+
+<!-- Production Version -->
+<script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+
+8:
+What is async and defer?
+
