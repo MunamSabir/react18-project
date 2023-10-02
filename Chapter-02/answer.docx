@@ -1,0 +1,20 @@
+ 1:
+ What is `NPM`?
+ It’s a popular package manager for the JavaScript programming language, and it's 
+ particularly associated with Node.js, which is a JavaScript runtime that allows for 
+ the execution of JavaScript code server-side.
+
+Package Repository: NPM provides access to a large repository of open-source packages 
+(called modules) that developers have shared for the community's use.
+Package Management: NPM allows developers to manage and control packages within their 
+projects. Developers can specify which package versions they want to install, update 
+packages easily, and handle package dependencies
+
+This is how we install packages using command line
+npm install -g <package-name>
+
+2:
+
+
+
+
