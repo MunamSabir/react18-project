@@ -105,3 +105,10 @@ Example:
 8:
 What is async and defer?
 
+async and defer are attributes that you can add to the <script> tag in HTML to control how JavaScript 
+files are loaded and executed in relation to the HTML document. Both attributes are used with external scripts.
+
+async or defer based on your script’s dependencies and execution requirements. If the script is independent and 
+doesn’t rely on the DOM or other scripts, async might be suitable. If the script needs a fully parsed DOM or depends 
+on the execution order, defer is a better choice. If neither attribute is used, the script is fetched and executed 
+synchronously, blocking the parser in the process
