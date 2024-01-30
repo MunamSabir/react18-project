@@ -99,6 +99,6 @@ Real DOM: The actual representation of the UI in the browser. Direct manipulatio
 
     Aspect	                    Virtual DOM	                                                Real DOM
     Efficiency	                High, due to minimal direct DOM updates	                    Lower, due to direct and frequent updates
-    Memory Usage	            Less, as it only updates changed items	                    More, as it updates even unchanged items
-    Update Speed	            Fast	                                                    Slower
-    Direct Rendering	        No, updates are batched	                                    Yes, every change renders immediately
+    Memory Usage	              Less, as it only updates changed items	                    More, as it updates even unchanged items
+    Update Speed	              Fast	                                                      Slower
+    Direct Rendering	          No, updates are batched	                                    Yes, every change renders immediately
