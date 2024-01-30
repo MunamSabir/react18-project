@@ -34,6 +34,7 @@ A: <React.Fragment> and its shorthand <> are used in React to group multiple ele
 Example:
 return (
 <React.Fragment>
+
 <Header />
 <Navigation />
 <Main />
@@ -43,6 +44,7 @@ return (
 
 return (
 <>
+
 <Header />
 <Navigation />
 <Main />
@@ -81,8 +83,9 @@ return <div>{name} uses {tool}</div>;
 
 function App() {
 return (
+
 <div className="App">
-<Tool name="Chetan Nada" tool="Figma" />
+<Tool name="Munam Sabir" tool="Figma" />
 </div>
 );
 }
